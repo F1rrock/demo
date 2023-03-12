@@ -22,7 +22,7 @@ public final class RecordResultSetMapper implements MapperTo<RecordModel, Result
                 serviceMapper.mapTo(param),
                 clientMapper.mapTo(param),
                 param.getTimestamp("leftTime").toLocalDateTime().toLocalTime(),
-                param.getTimestamp("beginningDatTime").toLocalDateTime()
+                param.getTimestamp("beginningDateTime").toLocalDateTime()
         );
     }
 }
